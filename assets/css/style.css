@@ -1,0 +1,76 @@
+.worldmap {fill:white;stroke:#b0bec5;stroke-width:0.5px;cursor: pointer; transition: stroke 0.5s;}
+.worldmap:hover {fill:#b0bec5 ;stroke:#b0bec5 ;stroke-width:0.5px;transition: transition-delay 0s;}
+.hover{fill:#b0bec5 ;stroke:#b0bec5 ;stroke-width:0.5px;}
+.worldmap_1 {fill:#c0c0c0;stroke:black;stroke-width:0.5px;}
+.worldmap_1:hover {fill:#c0ffc0;stroke:black;stroke-width:0.5px;}
+
+.worldmap_2 {fill:#e0e0e0;stroke:black;stroke-width:0.5px;}
+.worldmap_2:hover {fill:#e0ffe0;stroke:black;stroke-width:0.5px;}
+
+
+.imap_block{
+	width: 60%;
+  	margin: 0 auto;
+}
+
+
+.search_box{
+	width:100%;
+  z-index: 9999999;
+}
+.search_box .search_box_input{
+
+	   width: 300px;
+  	margin-left: 70%;
+    display: inline-block;
+
+
+}
+.tooltipCountry{
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background: rgba(84,110,122, 0.8);
+  color: white;
+  position: absolute;
+  z-index: 999999999;
+}
+.search_box .search_box_input input{
+
+	   width: 0px;
+    padding: 15px;
+    border: 0;
+    border-bottom: 0px;
+    border-radius: 5px;
+    margin-left: 220px;
+    /*float: left;*/
+    /*visibility: hidden;*/
+    transition: width 0.5s, margin-left 0.5s, border-bottom 0.5s;
+
+
+
+}
+.search_box .search_box_input input:focus{
+
+  outline: none;
+}
+.search_box .search_box_input i{
+
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  float:right;
+
+}
+
+@media screen and (max-width: 1280px) {
+  .imap_block {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .imap_block {
+    width: 100%;
+  }
+}
