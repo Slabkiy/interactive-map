@@ -1,3 +1,13 @@
+/* Country click handler */
+function countryclick(tld) {
+    for (var i = 0; i < CountryName.length; i++) {
+
+        if (tld == CountryName[i].code) {
+            window.location.href = "http://traveldorado.net/tag/" + CountryName[i].name.replace(/\s/ig, '_'); // your site url whis country tag
+        }
+    }
+}
+
 jQuery.fn.SVGWorldMap = function(options) {
     var s = {};
     s['AO'] = {}
@@ -544,15 +554,7 @@ jQuery.fn.SVGWorldMap = function(options) {
         if (parent) parent.appendChild(svg)
     }
 }
-/* Country click handler */
-function countryclick(tld) {
-    for (var i = 0; i < CountryName.length; i++) {
 
-        if (tld == CountryName[i].code) {
-            window.location.href = "http://slbtravel.com/tag/" + CountryName[i].name.replace(/\s/ig, '_'); // your site url whis para
-        }
-    }
-}
 var tooltipCountry;
 var move = false;
 
@@ -664,3 +666,24 @@ s.addEventListener('blur', function() {
     s.style.marginLeft = '220px';
     s.style.borderBottom = "0px";
 });
+
+
+
+var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-93027147-1', 'auto');
+ga('send', 'pageview');
